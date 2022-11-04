@@ -1,0 +1,15 @@
+schema: ./src/graphql/schema.graphql # GraphQL types (input file)
+overwrite: true
+generates:
+  ./src/generated/schema-types.ts: # Typescript types (output generated file)
+    plugins: # List of needed plugins (installed as devDeps)
+      - add:
+          content: 'declare namespace API {'
+      - add:
+          placement: append
+          content: '}'
+      - add:
+          placement: append
+          content: 'export default API'
+      - typescript
+      - typescript-resolvers
