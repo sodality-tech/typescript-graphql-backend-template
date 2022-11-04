@@ -1,0 +1,31 @@
+// This file is used to attach a VScode debugger and should be copied to .vscode
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "server",
+			"type": "node",
+			"request": "attach",
+			"port": 9229
+		},
+		{
+			"name": "worker",
+			"type": "node",
+			"request": "attach",
+			"port": 9339
+		},
+		{
+			"name": "Debug Jest Tests",
+			"type": "node",
+			"request": "launch",
+			"runtimeArgs": [
+				"--trace-warnings",
+				"--inspect-brk",
+				"${workspaceRoot}/node_modules/.bin/jest",
+				"--runInBand"
+			],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen",
+		}
+	]
+}
