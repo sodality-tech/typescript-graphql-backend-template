@@ -1,20 +1,21 @@
 import { Sequelize } from 'sequelize'
 import type { Options } from 'sequelize/types'
+import config from '../config'
 
 const connectionConfig: Options = {
 	logging: false,
 	dialect: 'postgres',
 	pool: {
-		max: parseInt(process.env.DATABASE_CONNECTION_COUNT || '20', 10),
+		max: config.databaseConnectionLimit,
 		min: 0,
 		acquire: 30000,
 		idle: 10000,
 	},
-	dialectOptions: {
-		ssl: {
-			rejectUnauthorized: false,
-		},
-	},
+	// dialectOptions: {
+	// 	ssl: {
+	// 		rejectUnauthorized: false,
+	// 	},
+	// },
 }
 
 const connection = new Sequelize(

@@ -1,4 +1,5 @@
 import path from 'path'
+import config from './src/config'
 
 interface ConnectionConfig {
 	client: string
@@ -15,7 +16,7 @@ interface ConnectionConfig {
 const connectionConfig: ConnectionConfig = {
 	client: 'pg',
 	connection: {
-		connectionString: process.env.DATABASE_URL,
+		connectionString: config.databaseUrl,
 		// ssl: {
 		// 	rejectUnauthorized: false,
 		// },
