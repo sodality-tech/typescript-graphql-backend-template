@@ -1,5 +1,5 @@
-import API from 'generated/schema-types'
 import type { ResolverContext } from '../../../@types/graphql'
+import API from '../../../generated/schema-types'
 
 const currentUser = async (
 	_: any,
