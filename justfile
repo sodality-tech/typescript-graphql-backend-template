@@ -1,6 +1,6 @@
 set dotenv-load := true
 
-start:
+dev:
 	yarn dev:server
 
 worker:
