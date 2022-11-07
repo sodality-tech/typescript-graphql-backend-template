@@ -1,7 +1,7 @@
 const config = {
 	nodeEnv: process.env.NODE_ENV ?? 'development',
 	port: process.env.PORT ?? 8000,
-	databaseUrl: process.env.DATABASE_URL ?? '',
+	databaseUrl: process.env.DATABASE_URL ?? 'postgres://localhost:5432/',
 	databaseConnectionLimit: parseInt(
 		process.env.DATABASE_CONNECTION_LIMIT ?? '20'
 	),
