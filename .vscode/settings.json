@@ -41,6 +41,7 @@
 		"lcov",
 		"rlly",
 		"Twilio",
+		"typedefs",
 		"unmocked",
 		"UUIDV"
 	]
