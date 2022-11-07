@@ -6,6 +6,10 @@
 
 // Ultimately, all resolvers are imported/exported in this index file
 
+import { userQueries } from './user'
+
 export default {
-	Query: {},
+	Query: {
+		...userQueries,
+	},
 }
