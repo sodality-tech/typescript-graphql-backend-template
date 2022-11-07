@@ -38,8 +38,12 @@
 	"cSpell.words": [
 		"codegen",
 		"fkey",
+		"hstore",
+		"knexfile",
 		"lcov",
+		"ossp",
 		"rlly",
+		"trgm",
 		"Twilio",
 		"typedefs",
 		"unmocked",

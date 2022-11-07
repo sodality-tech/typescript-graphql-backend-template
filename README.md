@@ -1,5 +1,3 @@
-TypeScript Backend Template
-
 ## How to use this template?
 
 This template makes assumptions about your environment. Most required software is defined in the `Brewfile`.
