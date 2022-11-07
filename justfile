@@ -46,3 +46,7 @@ debug-script path *arg:
 
 generate-schema target output:
 	pg_dump --schema-only {{target}} > {{output}}
+
+# -- Repo Setup
+setup:
+	brew bundle

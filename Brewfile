@@ -1,0 +1,5 @@
+brew "postgresql@14"
+brew "postgis"
+brew "just"
+brew "redis"
+brew "heroku"
