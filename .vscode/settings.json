@@ -39,6 +39,7 @@
 		"codegen",
 		"fkey",
 		"hstore",
+		"janky",
 		"knexfile",
 		"lcov",
 		"ossp",
