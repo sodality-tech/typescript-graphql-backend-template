@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "tsc",
-		"check": "tcs --noEmit",
+		"typecheck": "tsc --noEmit",
 		"dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
 		"dev:worker": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/worker.ts",
 		"debug:server": "ts-node-dev --inspect --files ./src/server.ts",

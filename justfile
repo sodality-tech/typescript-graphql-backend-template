@@ -13,7 +13,7 @@ debug-worker:
 	yarn debug:worker
 
 typecheck:
-	yarn check
+	yarn typecheck
 
 test:
     yarn test
