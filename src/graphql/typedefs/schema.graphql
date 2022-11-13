@@ -3,5 +3,5 @@ type User {
 }
 
 type Query {
-	currentUser: User!
+	me: User!
 }

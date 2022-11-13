@@ -1,7 +1,7 @@
 import type { ResolverContext } from '../../../@types/graphql'
 import API from '../../../generated/schema-types'
 
-const currentUser = async (
+const me = async (
 	_: any,
 	args: any,
 	ctx: ResolverContext
@@ -11,4 +11,4 @@ const currentUser = async (
 	}
 }
 
-export default { currentUser }
+export default { me }
