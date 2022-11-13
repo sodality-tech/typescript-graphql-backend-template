@@ -1,6 +1,7 @@
 import { Sequelize } from 'sequelize'
 import type { Options } from 'sequelize/types'
 import config from '../config'
+import models from './models'
 
 const connectionConfig: Options = {
 	logging: false,
@@ -18,9 +19,13 @@ const connectionConfig: Options = {
 	// },
 }
 
-const connection = new Sequelize(
+const sequelize = new Sequelize(
 	process.env.DATABASE_URL as string,
 	connectionConfig
 )
 
-export default connection
+for (const modelDefiner of models) {
+	modelDefiner(sequelize)
+}
+
+export default sequelize
