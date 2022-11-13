@@ -1,5 +1,7 @@
 import { Sequelize } from 'sequelize'
 
 export const applyRelationships = (sequelize: Sequelize): void => {
-	// sequelize.models.user.hasMany()
+	const { user, invite } = sequelize.models
+
+	invite.belongsTo(user, { as: 'fromUser', foreignKey: 'fromUserId' })
 }
